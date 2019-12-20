@@ -8,7 +8,7 @@ The exported data structures are standards-aligned with [OpenConfig](http://www.
 NQE allows network operators to easily build verification checks - for example, to perform sanity checks or to display information - that work across the entire fleet of devices in their network.
 
 This repository helps you get started with NQE.
-In particular, it provides information on the [Data Coverage](#data-coverage), the [Relationship to OpenConfig](#open-config) and reference to dedicated GitHub repos with more information about the supported [Interfaces and Examples](#interfaces-examples).
+In particular, it provides information on the [Data Coverage](#data-coverage), the [Relationship to OpenConfig](#open-config) and reference to dedicated GitHub repositories with more information about the supported [Interfaces and Examples](#interfaces-examples).
 
 If you'd like to start out with more background on NQE, please check out [this blog post](https://www.forwardnetworks.com/blog/network-query-engine).
 
@@ -22,21 +22,21 @@ There are two ways to consume NQE data, trough the [GraphQL Interface](#graphql)
 
 The NQE [GraphQL](https://graphql.org/) interface is a simple API that exposes the NQE information as JSON data in a fully-parsed form. This API allows network operators to easily develop scripts and applications in their favorite language or tool that provides a GraphQL client.
 
+The [network-query-engine-examples](https://github.com/forwardnetworks/network-query-engine-examples) repository provides more information on several
+GraphQL clients like the [Network Query Explorer](https://fwd.app/network-query-explorer) embedded in Forward Enterprise, [Postman](https://github.com/forwardnetworks/network-query-engine-examples#postman), as well as several  [Python  examples](https://github.com/forwardnetworks/network-query-engine-examples#python).
+
 ![Network Query Explorer](/images/network-query-explorer.png?width=800px&classes=shadow)
 
-The [network-query-engine-examples](https://github.com/forwardnetworks/network-query-engine-examples) repo provides more information on several
-GraphQL clients like the [Network Query Explorer](https://fwd.app/network-query-explorer) embedded in Forward Enterprise, [Postman](https://github.com/forwardnetworks/network-query-engine-examples#postman), as well as several  [Python  examples](https://github.com/forwardnetworks/network-query-engine-examples#python-examples).
 
 <a id="in-app-nqe-checks"></a>
 ## In-App NQE Checks
 
 In-App NQE Checks augments NQE by enabling IT teams to create custom verification checks using the NQE data model, directly in the Forward Enterprise browser-based interface.
-
+This is key for network engineers with no or little knowledge of programing languages or scripting and allows to keep track of the checks by saving them like any other check in the Forward Enterprise platform.
 
 ![In-App NQE Checks example](/images/in-app-nqe-checks-example.png?width=800px&classes=shadow)
 
-The [in-app-network-query-engine-examples](https://github.com/forwardnetworks/network-query-engine-examples) repo provides more information on several
-GraphQL clients like the [Network Query Explorer](https://fwd.app/network-query-explorer) embedded in Forward Enterprise, [Postman](https://github.com/forwardnetworks/network-query-engine-examples#postman), as well as several  [Python  examples](https://github.com/forwardnetworks/network-query-engine-examples#python-examples).
+The [in-app-network-query-engine-examples](https://github.com/forwardnetworks/in-app-NQE-checks-examples) repository provides more information and a set of examples.
 
 <a id="data-coverage"></a>
 # Data Coverage
@@ -81,3 +81,5 @@ provides the related interface object, not just its name.
 
 * [Product docs](https://app.forwardnetworks.com/docs/docs/applications/network_query_engine/)
 * [Network Query Engine Blog Post](https://www.forwardnetworks.com/blog/network-query-engine)
+* [Network Query Engine examples based on GraphQL](https://github.com/forwardnetworks/network-query-engine-examples)
+* [In-App NQE Checks Examples](https://github.com/forwardnetworks/in-app-NQE-checks-examples)
